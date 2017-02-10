@@ -46,6 +46,10 @@
 
     describe("Case for neither arithmetic nor geometric sequence", function() {
 
+      it("should return -1 for [2, 3, 4, 6, 9]", function() {
+        expect(a.aritGeo([2, 3, 4, 6, 9])).toEqual(-1);
+      });
+
       it("should return -1 for [1, 2, 3, 5, 8]", function() {
         expect(a.aritGeo([1, 2, 3, 5, 8])).toEqual(-1);
       });

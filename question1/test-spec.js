@@ -23,8 +23,8 @@
         expect(a.findMinMax([1, 2, 3, 4])).toEqual([1, 4]);
       });
 
-      it('should return [4, 6] for [6, 4]', function () {
-        expect(a.findMinMax([6, 4])).toEqual([4, 6]);
+      it('should return [0, -1] for [-1, 0]', function () {
+        expect(a.findMinMax([-1, 0])).toEqual([0, -1]);
       });
 
       it('should return [2, 78] for [4, 66, 6, 44, 7, 78, 8, 68, 2]', function () {
