@@ -1,29 +1,3 @@
-// function getPrime(n){
-// 	j =[];
-
-// 	if(n<2){
-// 		return 'Cannot Calculate sum of prime for negative numbers.';
-// 	}else if(n == undefined){
-
-// 		return 'Invalid Input';
-
-// 	}else if (typeof n == 'string' ){
-
-// 		return 'Invalid Input';
-
-// 	}else{
-// 		for(i=2; i<n; i++){
-// 			if(n%i ==1){
-// 				j.push(i);
-				
-// 			}else return false;
-			
-// 		}
-// 		console.log(j);
-// 	}
-// }
-// getPrime(200);
-
 module.exports ={
     getPrimes: function(number){
        var sieve = [], i, j, primes = [];
