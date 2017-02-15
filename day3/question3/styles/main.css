@@ -1,0 +1,118 @@
+.footer a {
+	color: white !important;
+	text-decoration: none;
+}
+.footer li {
+	list-style: none
+}
+
+.footer {
+	background-color: #9a231b;
+	color: white;
+	padding: 2%
+}
+.facilities h4 {
+	color: #1b9a23;
+	font-weight: bold;
+	text-align: center;
+}
+
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Add some padding inside the card container */
+.card-container {
+    padding: 2px 16px;
+}
+
+.widget-1 {
+	background-color: #d1ead3;
+	color: #231b9a
+}
+
+.widget-2 {
+	margin: 4% 0px;
+	background-color: #e0bdba;
+	color: #231b9a;
+	font-size: 14pt;
+}
+
+.widget-1 p {
+	
+	font-size: 14pt
+}
+p {
+	text-align: justify;
+}
+
+
+
+h3 {
+	font-weight: bolder;
+	color: #9a231b
+}
+
+.container {
+	
+	padding: 15px 0px;
+}
+
+#h-first-img {
+	float: left;
+	margin: 2%;
+	width: 30%;
+	height: auto;
+	margin-left: 0px;
+	margin-top: 0px
+}
+
+.row1 {
+	background-color: #9a231b
+}
+.tel-section {
+	text-align: right;
+	font-family: calibri;
+	padding: 2%;
+	color: white
+}
+
+.tel-section a {
+	color: white;
+	text-decoration: none;
+}
+
+.navbar {
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+	border-radius: 0px;
+	background-color: #9a231b !important;
+	
+}
+
+.nav li a {
+	color: white;
+}
+
+.nav>li>a:hover {
+	color: #9a231b
+}
+
+.active {
+	color: #9a231b
+}
+
+.nav li:hover {
+	color: #9a231b
+}
+
+.dropdown-menu {
+	background-color: #9a231b
+}

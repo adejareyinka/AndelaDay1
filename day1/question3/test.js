@@ -6,6 +6,9 @@
     it("The person should be a type of `object`, and an instance of the `Person` class", function() {
       var person = new p.Person();
       expect(typeof person).toEqual(typeof {});
+    });
+    it("The person should be a type of `object`, and an instance of the `Person` class", function() {
+      var person = new p.Person();
       expect(person instanceof p.Person).toBeTruthy();
     });
 
@@ -26,6 +29,11 @@
       var person = new p.Person('Sola', 'Kosoko', false);
       person.salary(2000);
       expect(person.wage).toBe(2000);
+    });
+    it("The person should be able to set salary or wage", function() {
+      var person = new p.Person('Sola', 'Kosoko', false);
+      person.salary(50000);
+      expect(person.wage).toBe(50000);
     });
 
 
