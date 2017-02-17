@@ -7,7 +7,7 @@ module.exports={
 		this.salary = salary;
 		this.getFullName = function(){
 	 		return prefix + " "  + firstName + " " + lastName + ".";
-	 	}
+		}
 		function salary(pay){
 			with(this){
 				wage = pay;
