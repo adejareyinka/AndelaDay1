@@ -1,56 +1,58 @@
 Array.prototype.toTwenty = function(){
-  for(var loop =1; loop<=20;loop++){
-    this.push(loop);
-  }
-    return this
-};
+    for(var i = 1; i <= 20; i ++){
+        this.push(i);
+    }
+   return this;
+}
 
-Array.prototype.toForty = function(){      
-  for(var loop = 1;loop<=20;loop++){
-    this.push(loop*2);
-  }
-  return this;
-};
+Array.prototype.toForty = function(){
+    for(var i = 2; i <= 40; i += 2){
+        this.push(i);
+    }
+   return this;
+}
 
 Array.prototype.toOneThousand = function(){
-  for(var loop =1; loop<=100;loop++){
-    this.push(loop*10);
-  }
- return this;
-};
+    for(var i = 10; i <= 1000; i += 10){
+        this.push(i);
+    }
+   return this;
+}
+
 
 Array.prototype.search = function(number){
-
-  first =0;
-  last = this.length-1;
-  var n = this.length;
-  var output = {count:0, index:-1, length:n};
+  
+  minValue = 0;   //the first index of the array
+  maxValue = this.length-1;   //the maximum index of the array
+  var n = this.length;        //the parameter passed array-length
+  var output = {count:0, index:-1, length:n}; //an object that consist the number of count, index and length
           
-  while(first<=last){
+  while(minValue<=maxValue){  //the base condition 
               
-    var mid = Math.floor((first+last)/2);
+    var midValue = Math.floor((minValue+maxValue)/2); //gives the rounded middle index of the array
            
-    if(this[first]==number){
-      output.index=first;
+    if(this[minValue] == number){ //checks if the first number in the current array is equal to the number passed as a parameter
+      output.index = minValue;
       return output;
 
-    }else if(this[last]==number){
-      output.index=last;
+    }else if(this[maxValue] == number){ //checks if the last number in the current array is equal to the number passed as a parameter
+      output.index = maxValue;
       return output
 
-    }else if(this[mid]==number){
-      output.index = mid;
+    }else if(this[midValue] == number){ //checks if the middle number in the current array is equal
+                                        // to the number passed as a parameter and return the object output
+      output.index = midValue;
       return output;
                   
-    }else if(this[mid]<number){
+    }else if(this[midValue] < number){  //checks if the middle number in the current array is less than the number passed as a parameter
                   
-      first = mid+1;
-      last -=1;
+      minValue = midValue + 1;
+      maxValue -=1;
                   
     }else{
-                  
-      last = mid -1;
-      first +=1;  
+
+      maxValue = midValue -1;
+      minValue +=1;
     }
                 
     output.count ++;
